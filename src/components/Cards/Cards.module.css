@@ -1,0 +1,19 @@
+.contenedor{
+   
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+
+    border-radius: 70px;
+    margin-top: 3rem;
+    border-color: aliceblue;
+}
+
+.titulo {
+    width: 45rem;
+    height: 13rem;
+    margin: 2rem auto;
+    display: flex;
+
+ }

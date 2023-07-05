@@ -1,0 +1,90 @@
+.all{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-grow: 2;
+}
+
+.img{
+    align-self: self-end;
+}
+
+.img img {
+    height: 600px;
+}
+
+
+.titulo {
+    width: 45rem;
+    height: 13rem;
+    margin: 2rem auto
+ }
+
+.text {
+
+    font-family: 'Silkscreen', cursive;
+    color: rgb(11, 233, 11);
+    font-size: 1.5rem;
+
+    display: flex;
+
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 2rem;
+
+}
+.input {
+    text-align: center;
+
+    font-size: 15px;
+    font-family: 'Silkscreen', cursive;
+
+    border-radius: 30px;
+    border: 4px solid #4df300;
+    background-color: transparent !important;
+
+    height: 3rem;
+    width: 24rem;
+    margin: 2rem auto;
+    
+}
+
+.boton{
+    border: 1px solid #430646;
+    background-color: #4ab321;
+    color: white;
+    border-radius: 30px;
+    margin: 0 auto;
+    width: 8rem;
+    height: 3rem;
+    font-size: 18px;
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Silkscreen', cursive;
+}
+
+.boton:hover{
+    border: 1px solid #09ff00;
+    background-color: #000000;
+    color: rgb(21, 255, 0);
+    border-radius: 30px;
+    margin: 0 auto;
+    width: 8rem;
+    height: 3rem;
+    font-size: 18px;
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Silkscreen', cursive;
+}
+
+.errores{
+    font-family: 'Silkscreen', cursive;
+    color: red;
+    font-size: 12px;
+}

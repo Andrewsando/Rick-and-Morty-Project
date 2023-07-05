@@ -1,0 +1,68 @@
+.info {
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 40px;
+    border-color: aliceblue;
+    padding: 1rem;
+    column-gap: 15px;
+    width: 40%;
+    margin-bottom: 1rem;
+    border: 3px solid #ffffff;
+    height: 16rem;
+    justify-content: space-between;
+}
+
+.text {
+    font-family: 'Silkscreen', cursive;
+    color: azure;
+    font-size: 23px;
+    word-break: break-all;
+    margin: 2px;
+
+}
+
+.img {
+    border-radius: 40px;
+    height: 100%;
+}   
+
+.linkIndividual {
+    color: rgb(255, 52, 255);
+    font-family: 'Silkscreen', cursive;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.linkIndividual:hover {
+    color: rgb(103, 255, 2);
+}
+
+.botonClose{
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+    font-family: 'Silkscreen', cursive;
+    border: 2px solid #51ff00;
+    color: rgb(94, 255, 0);
+    background-color: rgb(0, 0, 0);
+}
+
+.botonClose:hover{
+    border: 2px solid #51ff00;
+    color: rgb(0, 0, 0);
+    background-color: rgb(145, 255, 0);
+}
+
+.botonLike{
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+    border: 2px solid #b700ff;
+    color: rgb(94, 255, 0);
+    background-color: rgb(0, 0, 0);
+} 
+.botonLike:hover{
+    border: 2px solid #ff00bf;
+    color: rgb(0, 0, 0);
+    background-color: rgb(253, 0, 253);
+} 

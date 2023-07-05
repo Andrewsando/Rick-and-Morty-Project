@@ -1,0 +1,44 @@
+.barraNav {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0.5rem;
+    gap: 5px;
+ }
+
+ .barraNav button{
+    padding: 0.5rem;
+    width: 6 rem;
+    border-radius: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid;
+    border-color: rgb(30, 253, 0);
+    margin-left: 4px;
+ }
+
+ .barraNav button:hover{
+    background-color: rgb(0, 255, 0);
+ }
+
+ .barraNav a{
+    text-decoration: none;
+    color: blanchedalmond;
+    font-family: 'Silkscreen', cursive;
+ }
+ .barraNav a:hover{
+color: black;
+ }
+
+ .botonLogOut{
+   color: white;
+   font-family: 'Silkscreen', cursive;
+   margin-right: 10px;
+ }
+
+ .botonLogOut:hover{
+   color: white;
+   font-family: 'Silkscreen', cursive;
+   margin-right: 10px;
+   color: black
+ }

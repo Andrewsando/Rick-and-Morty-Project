@@ -1,0 +1,50 @@
+
+.carta{
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 40px;
+    border-color: aliceblue;
+    padding: 1rem;
+    column-gap: 15px;
+    width: 40%;
+    margin-top: 5rem;
+    border: 3px solid #ffffff;
+    height: 16rem;
+    margin-left: 27%;
+
+    
+}
+
+.info{
+    flex-direction: column;
+}
+
+.texto{
+    font-family: 'Silkscreen', cursive;
+    color: azure;
+    font-size: 23px;
+    word-break: break-all;
+    margin: 2px;
+}
+
+.img{
+    
+        border-radius: 40px;
+        height: 100%;
+    
+}
+
+.nombre{
+    color: rgb(43, 255, 0);
+    font-family: 'Silkscreen', cursive;
+    font-size: 30px;
+    
+}
+
+.titulo {
+    width: 45rem;
+    height: 13rem;
+    margin: 4rem auto;
+    display: flex;
+
+ }
