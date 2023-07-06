@@ -7,6 +7,9 @@ const SearchBar = ({ onSearch }) => {
   const handleChange = (event) => {
     setId(event.target.value);
   };
+  let random = () => {
+    onSearch(Math.floor(Math.random() * 700 + 1))
+  };
 
   return (
     <div>
@@ -17,9 +20,10 @@ const SearchBar = ({ onSearch }) => {
         onChange={handleChange}
         value={id}
       />
-      <button className={s.letra} onClick={() => {onSearch(id); setId('')}}>
-        ADD A CHARACTER
+      <button className={s.letra} onClick={() => {onSearch(id); setId(' ')}}>
+        ADD CHARACTER
       </button>
+    <button className={s.letra} onClick={() =>{random()}}>Add Random Card</button>
     </div>
   );
 };

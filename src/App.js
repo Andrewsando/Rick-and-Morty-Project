@@ -34,7 +34,7 @@ function App() {
         if (data.name) {
           setCharacters((oldChars) => [...oldChars, data]);
         } else {
-          alert("¡No hay personajes con este ID!");
+          alert("¡There are no characters with that ID!");
         }
       }
     );

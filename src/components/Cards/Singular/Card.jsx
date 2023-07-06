@@ -37,10 +37,9 @@ function Card({
     }
   };
 
-  console.log(myFavorites)
+
   useEffect(() => {
     myFavorites.forEach((fav) => {
-      console.log(myFavorites)
       if (fav.id === id) {
         setIsFav(true);
       }

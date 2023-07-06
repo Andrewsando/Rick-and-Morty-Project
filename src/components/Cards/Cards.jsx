@@ -10,7 +10,6 @@ export default function Cards({ characters, onClose }) {
       alt="rickandmorty" />
       <div className={s.contenedor}>
         {characters.map((prop) => {
-          console.log(prop)
           return (
 
             <Card

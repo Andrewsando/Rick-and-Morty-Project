@@ -17,9 +17,6 @@ const Detail = () =>{
            }
         })
         .catch((err) => window.alert("Error"));
-        return () => {
-         console.log("Me desmonto, adios!");
-      };
      }, [id]);
 
     return(
