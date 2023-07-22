@@ -4,7 +4,7 @@ import { orderCards, filterCards } from "../../redux/action.js";
 import { useState } from "react";
 import s from "./Favorites.module.css";
 
-const Favorites = ({ myFavorites }) => {
+const Favorites = ({ myFavorites, onClose }) => {
   const dispatch = useDispatch();
   const [aux, setAux] = useState(false);
 
@@ -49,7 +49,7 @@ const Favorites = ({ myFavorites }) => {
             gender={fav.gender}
             origin={fav.origin}
             image={fav.image}
-            onClose={fav.onClose}
+            onClose={onClose}
           ></Card>
           );
         })}

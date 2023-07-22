@@ -11,7 +11,6 @@ export default function Cards({ characters, onClose }) {
       <div className={s.contenedor}>
         {characters.map((prop) => {
           return (
-
             <Card
               onClose={onClose}
               name={prop.name}
@@ -21,10 +20,7 @@ export default function Cards({ characters, onClose }) {
               id={prop.id}
               key={prop.id}
               status={prop.status}
-              origin={origin.name} 
-              
-              
-              
+              origin={origin.name}
               />
           );
         })}
