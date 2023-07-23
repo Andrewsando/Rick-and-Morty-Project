@@ -18,7 +18,7 @@ function App() {
   const [access, setAccess] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
-  const [favorites, setFavorites] = useState([])
+
 
   const login = async (userData) =>{
     console.log(login)
@@ -40,14 +40,6 @@ function App() {
     !access && navigate("/")
   }, [access, navigate]);
 
-async function getFavorites(){
-try{
-
-} catch{
-  
-}
-
-}
 
   async function onSearch(id) {
     try {
@@ -85,7 +77,7 @@ try{
         <Route path="/" element={<Form login={login} />} />
         <Route path="/about" element={<About />} />
         <Route path="/detail/:id" element={<Detail />} />
-        <Route path="/favorites" element={<Favorites myFavorites={my} onClose={onClose} />} />
+        <Route path="/favorites" element={<Favorites onClose={onClose} />} />
       </Routes>
     </div>
   );

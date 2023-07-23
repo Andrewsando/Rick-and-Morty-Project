@@ -23,7 +23,6 @@ export const removeFav = (id) => {
   return async (dispatch) => {
     try {
       const { data } = await axios.delete(endpoint);
-      if (!data.length) throw Error("There are no characters to add");
       return dispatch({
         type: REMOVE_FAV,
         payload: data,

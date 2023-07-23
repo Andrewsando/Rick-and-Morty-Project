@@ -49,7 +49,6 @@ const Favorites = ({ myFavorites, onClose }) => {
             gender={fav.gender}
             origin={fav.origin}
             image={fav.image}
-            onClose={onClose}
           ></Card>
           );
         })}

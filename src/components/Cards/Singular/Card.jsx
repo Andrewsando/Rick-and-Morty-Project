@@ -40,7 +40,6 @@ function Card({
 
   useEffect(() => {
     myFavorites.forEach((fav) => {
-      console.log(fav)
       if (fav.id === id) {
         setIsFav(true);
       }
@@ -49,9 +48,9 @@ function Card({
 
   return (
     <div className={s.info}>
-      <button className={s.botonClose} onClick={() => onClose(id)}>
+{ onClose && <button className={s.botonClose} onClick={() => onClose(id)}>
         X
-      </button>
+      </button>}
       <button className={s.botonLike} onClick={handleFavorite}>{isFav ? "❤️" : "🤍"}</button>
 
       <div>
