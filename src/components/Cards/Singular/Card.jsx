@@ -37,7 +37,6 @@ function Card({
     }
   };
 
-
   useEffect(() => {
     myFavorites.forEach((fav) => {
       if (fav.id === id) {
@@ -48,10 +47,14 @@ function Card({
 
   return (
     <div className={s.info}>
-      <button className={s.botonClose} onClick={() => onClose(id)}>
-        X
+      {onClose && (
+        <button className={s.botonClose} onClick={() => onClose(id)}>
+          X
+        </button>
+      )}
+      <button className={s.botonLike} onClick={handleFavorite}>
+        {isFav ? "❤️" : "🤍"}
       </button>
-      <button className={s.botonLike} onClick={handleFavorite}>{isFav ? "❤️" : "🤍"}</button>
 
       <div>
         <NavLink className={s.linkIndividual} to={`/detail/${id}`}>

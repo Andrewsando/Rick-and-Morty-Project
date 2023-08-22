@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-import s from './SearchBar.module.css'
+import s from "./SearchBar.module.css";
 
 const SearchBar = ({ onSearch }) => {
-  const [id, setId] = useState('');
+  const [id, setId] = useState("");
 
   const handleChange = (event) => {
     setId(event.target.value);
   };
   let random = () => {
-    onSearch(Math.floor(Math.random() * 700 + 1))
+    onSearch(Math.floor(Math.random() * 700 + 1));
   };
 
   return (
-    <div>
+    <div className={s.section}>
       <input
         className={s.barra}
         type="search"
@@ -20,10 +20,23 @@ const SearchBar = ({ onSearch }) => {
         onChange={handleChange}
         value={id}
       />
-      <button className={s.letra} onClick={() => {onSearch(id); setId(' ')}}>
+      <button
+        className={s.letra}
+        onClick={() => {
+          onSearch(id);
+          setId(" ");
+        }}
+      >
         ADD CHARACTER
       </button>
-    <button className={s.letra} onClick={() =>{random()}}>Add Random Card</button>
+      <button
+        className={s.letra}
+        onClick={() => {
+          random();
+        }}
+      >
+        Add Random Card
+      </button>
     </div>
   );
 };

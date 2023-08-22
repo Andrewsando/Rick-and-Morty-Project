@@ -26,7 +26,7 @@ function App() {
 
   useEffect(() => {
     !access && navigate("/");
-  }, [access]);
+  }, [access, navigate]);
 
   function onSearch(id) {
     axios(`https://rickandmortyapi.com/api/character/${id}`).then(
@@ -41,28 +41,31 @@ function App() {
   }
 
   const onClose = (id) => {
-    const characterFiltered = characters.filter(character => character.id !== Number(id))
-      setCharacters(characterFiltered)
-    }
-;
-
+    const characterFiltered = characters.filter(
+      (character) => character.id !== Number(id)
+    );
+    setCharacters(characterFiltered);
+  };
   const location = useLocation();
 
   return (
     <div className={s.App}>
-        <div>
-          {location.pathname !== "/" ? <Nav onSearch={onSearch} setAcces={setAccess} /> : null}
-        </div>
-        <Routes>
-          <Route
-            path="/home"
-            element={<Cards characters={characters} onClose={onClose} />} />
-          <Route path="/" element={<Form login={login} />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/detail/:id" element={<Detail />} />
-          <Route path="/favorites" element={<Favorites/>} />
-        </Routes>
+      <div>
+        {location.pathname !== "/" ? (
+          <Nav onSearch={onSearch} setAcces={setAccess} />
+        ) : null}
       </div>
+      <Routes>
+        <Route
+          path="/home"
+          element={<Cards characters={characters} onClose={onClose} />}
+        />
+        <Route path="/" element={<Form login={login} />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/detail/:id" element={<Detail />} />
+        <Route path="/favorites" element={<Favorites onClose={onClose} />} />
+      </Routes>
+    </div>
   );
 }
 
